@@ -1,0 +1,58 @@
+#input-file{
+    display: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    overflow: hidden;
+}
+
+#trigger-btn {
+    width: 650px;
+    height: 250px;
+    background-color: hsl(223, 58%, 90%);
+    border-radius: 25px;
+    outline: grey dashed 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#trigger-btn.drag-over {
+    background-color: hsl(223, 58%, 93%);
+}
+
+#btn-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#convert-btn, #download-btn{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+}
+
+#convert-btn:hover, #download-btn:hover{
+    background-color: hsl(0, 0%, 97%);
+}
+
+#file-name {
+    font-size: 20px;
+    margin: 0;
+    user-select: none;
+}

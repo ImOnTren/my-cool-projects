@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" type="text/css" href="converter-style.css" />
+        <link rel="icon" type="image/png" href="fileconverter-icon.png">
+        <title>PNG to JPG</title>
+    </head>
+    <body>
+        <div>
+            <input id="input-file" type="file" accept="image/png">
+            <div id="trigger-btn">
+                <p id="file-name" oncopy="false">No file chosen</p>
+            </div>
+        </div>
+
+        <div id="btn-container">
+            <button type="button" id="convert-btn">Convert</button>
+            <a id="download"><button type="button" id="download-btn">Download</button></a>
+        </div>
+        <script src="converter-script.js"></script>
+    </body>
+</html>

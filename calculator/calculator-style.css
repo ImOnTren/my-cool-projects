@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 90%);
+    overflow: hidden;
+}
+
+.calculator {
+    border-radius: 20px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #282727;
+}
+
+.calculator input {
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    text-align: left;
+    font-size: 50px;
+    background-color: grey;
+    color: white;
+    grid-column: span 4;
+    outline: none;
+}
+
+.calculator button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+#button-0{
+    grid-column: span 2;
+    width: 170px;
+    border-radius: 40px;
+}
+
+button:nth-child(6), button:nth-child(7), button:nth-child(8), button:nth-child(10),
+button:nth-child(11), button:nth-child(12), button:nth-child(14), button:nth-child(15),
+button:nth-child(16), button:nth-child(18), button:nth-child(19){
+    background-color: #505050;
+}
+
+button:nth-child(6):hover, button:nth-child(7):hover, button:nth-child(8):hover, button:nth-child(10):hover,
+button:nth-child(11):hover, button:nth-child(12):hover, button:nth-child(14):hover, button:nth-child(15):hover,
+button:nth-child(16):hover, button:nth-child(18):hover, button:nth-child(19):hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:nth-child(6):active, button:nth-child(7):active, button:nth-child(8):active, button:nth-child(10):active,
+button:nth-child(11):active, button:nth-child(12):active, button:nth-child(14):active, button:nth-child(15):active,
+button:nth-child(16):active, button:nth-child(18):active, button:nth-child(19):active{
+    background-color: hsl(0, 0%, 50%);
+}
+
+button:nth-child(2), button:nth-child(3), button:nth-child(4) {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+button:nth-child(2):hover, button:nth-child(3):hover, button:nth-child(4):hover {
+    background-color: hsl(0, 0%, 75%);
+}
+
+button:nth-child(2):active, button:nth-child(3):active, button:nth-child(4):active {
+    background-color: hsl(0, 0%, 85%);
+}
+
+button:nth-child(9), button:nth-child(17), button:nth-child(13),
+button:nth-child(5), button:nth-child(20) {
+    background-color: #f1a33c;
+}
+
+button:nth-child(9):hover, button:nth-child(17):hover, button:nth-child(13):hover,
+button:nth-child(5):hover, button:nth-child(20):hover {
+    background-color: hsl(34, 87%, 70%);
+}
+
+button:nth-child(9):active, button:nth-child(17):active, button:nth-child(13):active,
+button:nth-child(5):active, button:nth-child(20):active {
+    background-color: hsl(34, 87%, 80%);
+}
