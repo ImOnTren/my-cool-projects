@@ -21,6 +21,20 @@ html, body {
     box-sizing: border-box;
 }
 
+.gallery a{
+    outline: none;
+    text-decoration: none;
+}
+
+.gallery a:focus,
+.gallery a:active {
+    outline: none;
+}
+
+.gallery a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .card {
     position: relative;
     width: 120px;
