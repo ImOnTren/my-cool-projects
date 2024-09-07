@@ -63,3 +63,28 @@ html, body {
     flex: 2;
     cursor: pointer;
 }
+
+@media (max-width: 728px) {
+    .gallery{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+    }
+    .card{
+        width: 220px;
+        height: 20%;
+    }
+    .card img{
+        height: 100%;
+    }
+    .border-text{
+        display: none;
+    }
+}
+@media (max-height: 516px) {
+    .card img{
+        height: 100%;
+    }
+}
