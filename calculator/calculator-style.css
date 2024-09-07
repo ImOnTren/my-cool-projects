@@ -5,6 +5,12 @@ body {
     height: 100vh;
     background-color: hsl(0, 0%, 90%);
     overflow: hidden;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+}
+
+button, input, select, textarea{
+    touch-action: manipulation;
 }
 
 .calculator {
@@ -39,6 +45,14 @@ body {
     font-size: 30px;
     cursor: pointer;
     color: white;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.calculator button:focus,
+.calculator button:active{
+    outline: none;
 }
 
 #button-0{
