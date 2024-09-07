@@ -83,8 +83,3 @@ html, body {
         display: none;
     }
 }
-@media (max-height: 516px) {
-    .card img{
-        height: 100%;
-    }
-}
