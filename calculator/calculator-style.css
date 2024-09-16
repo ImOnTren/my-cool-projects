@@ -50,15 +50,29 @@ button, input, select, textarea{
     touch-action: manipulation;
 }
 
-.calculator button:focus,
-.calculator button:active{
-    outline: none;
-}
-
 #button-0{
     grid-column: span 2;
     width: 170px;
     border-radius: 40px;
+}
+
+@media (max-width: 412px){
+    .calculator{
+        grid-template-columns: repeat(4, 60px);
+    }
+    .calculator button{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+    #button-0{
+        width: 130px;
+    }
+}
+
+.calculator button:focus,
+.calculator button:active{
+    outline: none;
 }
 
 button:nth-child(6), button:nth-child(7), button:nth-child(8), button:nth-child(10),
